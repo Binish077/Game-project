@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript" src="http://java.com/js/dtjava.js"></script>
+        <script>
+            function deployIt() {
+                dtjava.embed(
+                    {
+                        id: "myApp",
+                        url: "Fish.jnlp",
+                        width: 300,
+                        height: 200,
+                        placeholder: "place",
+                    },
+                    { javafx: "2.1+"},
+                    {}
+                );
+            }
+            dtjava.addOnloadCallback(deployIt);
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0" />
+        <title>Hawk in Trouble!</title>
+        <link rel="stylesheet" href="hawkstyle.css" />
+    </head>
+    <body>
+        <div id="place"></div>
+    </body>
+</html>

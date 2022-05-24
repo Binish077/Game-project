@@ -1,0 +1,56 @@
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    background-image: url("header.jpg");
+    background-size: contain;
+}
+
+.welcomeMsg {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkblue;
+    padding: 60px;
+    font-size: 60px;
+}
+
+.options {
+    background-color: paleturquoise;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    height: 400px; 
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 15px;
+    animation: text-color 5s infinite;
+    text-decoration: none;
+    background-color: white;
+    margin: 10px;
+}
+
+@keyframes text-color {
+    0% {color: purple; }
+    25% {color: goldenrod; }
+    50% {color: deeppink; }
+    75% {color: green; }
+    100% {color: blue; }
+}
+
